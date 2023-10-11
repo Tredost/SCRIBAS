@@ -5,11 +5,11 @@
 #define chave2 12
 
 void setup() {
-  pinMode(led1,OUTPUT);
-  pinMode(led2,OUTPUT);
-  pinMode(led3,OUTPUT);
-  pinMode(chave1,INPUT);
-  pinMode(chave2,INPUT);
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
+  pinMode(led3, OUTPUT);
+  pinMode(chave1, INPUT);
+  pinMode(chave2, INPUT);
 }
 
 void loop() {
