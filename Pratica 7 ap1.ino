@@ -1,17 +1,18 @@
+#define buzzer1 1
+#define buzzer2 2
+#define buzzer3 3
 
 void setup() {
-  // put your setup code here, to run once:
-  pinMode(1,OUTPUT);
-  pinMode(2,OUTPUT);
-  pinMode(3,OUTPUT);
+  pinMode(buzzer1, OUTPUT);
+  pinMode(buzzer2, OUTPUT);
+  pinMode(buzzer3, OUTPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  tone(1, 2000, 500);
+  tone(buzzer1, 2000, 500);
   delay(500);
-  tone(2, 1000, 300);
+  tone(buzzer2, 1000, 300);
   delay(500);
-  tone(3, 50, 100);
+  tone(buzzer3, 50, 100);
   delay(300);
 }
