@@ -1,18 +1,12 @@
-
 void setup() {
-  // put your setup code here, to run once:
   pinMode(5,OUTPUT);
   pinMode(6,OUTPUT);
   pinMode(7,OUTPUT);
-
   pinMode(11,INPUT);
   pinMode(12,INPUT);
-  
-
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
   if (digitalRead(11) == 0 and digitalRead(12) == 0) {
     digitalWrite(5, 1);
     digitalWrite(6, 1);
