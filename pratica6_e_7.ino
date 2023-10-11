@@ -1,9 +1,9 @@
 #define buzzer1 9
 #define buzzer2 10
 #define buzzer3 11
-#define entrada1 2 
+#define entrada1 2
 #define entrada2 3
-#define entrada3 4 
+#define entrada3 4
 #define entrada4 5
 
 void setup() {
@@ -31,9 +31,7 @@ void loop() {
 
   switch (valorBinario) {
     case 0:
-    digitalWrite(buzzer1, HIGH);
-    delay(50);
-    digitalWrite(buzzer1, LOW);
+    playMusica1();
     break;
 
     case 1:
@@ -82,3 +80,17 @@ void loop() {
   delay(1000); 
   }
 }
+
+void playMusica1() {
+  int melodia[] = {262, 294, 330, 349, 392, 440, 494, 523};
+  int duracaoNotas[] = {4, 4, 4, 4, 4, 4, 4, 4};
+
+  for (int i = 0; i < 8; i++) {
+    tone(buzzer, melodia[i]);
+    delay(500 / duracaoNotas[i]);
+    noTone(buzzer);
+    delay(50);
+  }
+}
+
+
