@@ -35,45 +35,31 @@ void loop() {
     break;
 
     case 1:
-    digitalWrite(buzzer1, HIGH);
-    delay(200);
-    digitalWrite(buzzer1, LOW);
+    playMusica2();
     break;
 
     case 2:
-    digitalWrite(buzzer1, HIGH);
-    delay(100);
-    digitalWrite(buzzer1, LOW);
+    playMusica3();
     break;
 
     case 3:
-    digitalWrite(buzzer1, HIGH);
-    delay(250);
-    digitalWrite(buzzer1, LOW);
+    playMusica4();
     break;
 
     case 4:
-    digitalWrite(buzzer1, HIGH);
-    delay(20);
-    digitalWrite(buzzer1, LOW);
+    playMusica5();
     break;
 
     case 5:
-    digitalWrite(buzzer1, HIGH);
-    delay(80);
-    digitalWrite(buzzer1, LOW);
+    playMusica6();
     break;
 
     case 6:
-    digitalWrite(buzzer1, HIGH);
-    delay(200);
-    digitalWrite(buzzer1, LOW);
+    playMusica7();
     break;
 
     case 7:
-    digitalWrite(buzzer1, HIGH);
-    delay(180);
-    digitalWrite(buzzer1, LOW);
+    playMusica8();
     break;
   }
 
@@ -82,10 +68,46 @@ void loop() {
 }
 
 void playMusica1() {
-  int melodia[] = {262, 294, 330, 349, 392, 440, 494, 523};
-  int duracaoNotas[] = {4, 4, 4, 4, 4, 4, 4, 4};
+  int melodia[] = {262, 294, 330, 349, 392, 440, 494, 523, 262, 294, 330, 349, 392, 440, 494, 523, 262, 294, 330,};
+  int duracaoNotas[] = {4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4};
 
   for (int i = 0; i < 8; i++) {
+    tone(buzzer, melodia[i]);
+    delay(500 / duracaoNotas[i]);
+    noTone(buzzer);
+    delay(50);
+  }
+}
+
+void playMusica2() {
+  int melodia[] = {262, 262, 294, 262, 349, 330, 262, 262, 294, 262, 392, 349, 262, 262, 523, 440, 349, 330, 294, 466, 466, 440, 349, 392, 349};
+  int duracaoNotas[] = {4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 4, 4, 4, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 2};
+
+  for (int i = 0; i < 25; i++) {
+    tone(buzzer, melodia[i]);
+    delay(500 / duracaoNotas[i]);
+    noTone(buzzer);
+    delay(50);
+  }
+}
+
+void playMusica3() {
+  int melodia[] = {392, 349, 330, 294, 523, 392, 349, 330, 294, 523, 392, 349, 330, 349, 330, 294, 523, 392, 349, 330, 294, 349, 330, 294, 261, 294, 330, 349};
+  int duracaoNotas[] = {8, 8, 8, 8, 4, 8, 8, 8, 8, 4, 8, 8, 8, 8, 8, 8, 4, 8, 8, 8, 8, 8, 8, 4, 4, 8, 8, 4};
+
+  for (int i = 0; i < 27; i++) {
+    tone(buzzer, melodia[i]);  
+    delay(500 / duracaoNotas[i]);  
+    noTone(buzzer); 
+    delay(50);  
+  }
+}
+
+void playMusica4() {
+  int melodia[] = { 233, 233, 262, 311, 233, 233, 262, 311, 349, 311, 349, 392, 349, 311, 349, 311, 262, 294, 262, 294, 233, 262, 233, 262, 196 };
+  int duracaoNotas[] = { 4, 4, 4, 4, 8, 4, 4, 4, 8, 4, 4, 4, 8, 4, 4, 4, 4, 4, 4, 4, 8, 4, 4, 4, 8 };
+
+  for (int i = 0; i < 25; i++) {
     tone(buzzer, melodia[i]);
     delay(500 / duracaoNotas[i]);
     noTone(buzzer);
