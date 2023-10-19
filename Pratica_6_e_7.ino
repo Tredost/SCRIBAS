@@ -12,9 +12,6 @@ void setup() {
   pinMode(entrada2, INPUT);
   pinMode(entrada3, INPUT);
   pinMode(entrada4, INPUT);
-  pinMode(buzzer1, OUTPUT);
-  pinMode(buzzer2, OUTPUT);
-  pinMode(buzzer3, OUTPUT);
 }
 
 void loop() {
