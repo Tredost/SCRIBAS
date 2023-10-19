@@ -19,7 +19,7 @@ void setup() {
 
 void loop() {
   while (digitalRead(entrada1) == 1) {
-  
+
   int estado1 = digitalRead(entrada2);
   int estado2 = digitalRead(entrada3);
   int estado3 = digitalRead(entrada4);
@@ -63,7 +63,7 @@ void loop() {
     break;
   }
 
-  delay(1000); 
+  delay(1000);
   }
 }
 
@@ -71,7 +71,7 @@ void playMusica1() {
   int melodia[] = {262, 294, 330, 349, 392, 440, 494, 523, 262, 294, 330, 349, 392, 440, 494, 523, 262, 294, 330,};
   int duracaoNotas[] = {4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4};
 
-  for (int i = 0; i < 8; i++) {
+  for (int i = 0; i < 19; i++) {
     tone(buzzer, melodia[i]);
     delay(500 / duracaoNotas[i]);
     noTone(buzzer);
@@ -96,10 +96,10 @@ void playMusica3() {
   int duracaoNotas[] = {8, 8, 8, 8, 4, 8, 8, 8, 8, 4, 8, 8, 8, 8, 8, 8, 4, 8, 8, 8, 8, 8, 8, 4, 4, 8, 8, 4};
 
   for (int i = 0; i < 27; i++) {
-    tone(buzzer, melodia[i]);  
-    delay(500 / duracaoNotas[i]);  
-    noTone(buzzer); 
-    delay(50);  
+    tone(buzzer, melodia[i]);
+    delay(500 / duracaoNotas[i]);
+    noTone(buzzer);
+    delay(50);
   }
 }
 
@@ -115,4 +115,15 @@ void playMusica4() {
   }
 }
 
+void playHinoBahia() {
+  int melodia[] = {262, 294, 330, 349, 392, 440, 494, 523, 587, 659, 698, 784};
+  int duracaoNotas[] = {4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4};
+
+  for (int i = 0; i < 12; i++) {
+    tone(buzzer, melodia[i]);
+    delay(500 / duracaoNotas[i]);
+    noTone(buzzer);
+    delay(50);
+  }
+}
 
