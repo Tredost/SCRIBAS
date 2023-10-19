@@ -1,8 +1,8 @@
-#define led1 5
-#define led2 6
-#define led3 7
-#define chave1 11
-#define chave2 12
+#define led1 47
+#define led2 49
+#define led3 51
+#define chave1 31
+#define chave2 33
 
 void setup() {
   pinMode(led1, OUTPUT);

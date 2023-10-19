@@ -1,6 +1,6 @@
-#define buzzer1 1
-#define buzzer2 2
-#define buzzer3 3
+#define buzzer1 9
+#define buzzer2 10
+#define buzzer3 11
 
 void setup() {
   pinMode(buzzer1, OUTPUT);

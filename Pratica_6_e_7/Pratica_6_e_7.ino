@@ -1,6 +1,6 @@
-#define buzzer1 9
-#define buzzer2 10
-#define buzzer3 11
+#define buzzer1 32
+#define buzzer2 34
+#define buzzer3 36
 #define entrada1 2
 #define entrada2 3
 #define entrada3 4
