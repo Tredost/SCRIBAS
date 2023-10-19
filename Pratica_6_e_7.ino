@@ -56,7 +56,7 @@ void loop() {
     break;
 
     case 7:
-    playSonatinaCMaior();
+    playSonatina();
     break;
   }
 
@@ -149,7 +149,7 @@ void playWeWillRockYou() {
   }
 }
 
-void playSonatinaCMaior() {
+void playSonatina() {
   int melodia[] = { 261, 330, 392, 523, 392, 330, 261, 196, 131, 261, 294, 196 };
   int duracaoNotas[] = { 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 1000, 1000 };
 
